@@ -1,0 +1,41 @@
+@mixin reset {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin dflex ($wrap: nowrap, $direction: row, $justify: flex-start, $align: center) {
+  display: flex;
+  flex-wrap: $wrap;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin abs-pseudo {
+  content: "";
+  position: absolute;
+}
+
+@mixin abs-center {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin transition ($prop: all) {
+  transition: $prop .2s linear;
+}
