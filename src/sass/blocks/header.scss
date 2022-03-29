@@ -1,0 +1,6 @@
+.header__top-block-container {
+    @include dflex(nowrap, row, space-between, center);
+    width: 100%;
+    max-width: 1800px;
+    margin: 0 auto;
+}

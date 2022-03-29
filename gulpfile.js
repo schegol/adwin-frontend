@@ -3,7 +3,7 @@
 var gulp = require("gulp");
 var plumber = require("gulp-plumber");
 var sourcemap = require("gulp-sourcemaps");
-var sass = require('gulp-sass')(require('sass'));
+var sass = require("gulp-sass")(require("node-sass"));
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
@@ -17,7 +17,7 @@ gulp.task("css", function () {
   return gulp.src("src/sass/style.scss")
     .pipe(plumber())
     .pipe(sourcemap.init())
-    .pipe(sass({includePaths: require("node-normalize-scss").includePaths}))
+    .pipe(sass())
     .pipe(postcss([
       autoprefixer()
     ]))

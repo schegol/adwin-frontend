@@ -1,5 +1,14 @@
-@import "normalize"
+@import "normalize.scss";
 @import "fonts.scss";
 @import "variables.scss";
 @import "mixins.scss";
 @import "global.scss";
+@import "blocks/header.scss";
+@import "blocks/logo.scss";
+@import "blocks/header-menu.scss";
+@import "blocks/image-menu.scss";
+@import "blocks/main.scss";
+@import "blocks/recipes.scss";
+@import "blocks/footer.scss";
+@import "blocks/footer-menu.scss";
+@import "blocks/social.scss";

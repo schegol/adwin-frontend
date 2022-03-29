@@ -22,6 +22,7 @@
     "gulp-sass": "^5.1.0",
     "gulp-sourcemaps": "^3.0.0",
     "node-normalize-scss": "^8.1.2",
+    "node-sass": "^7.0.1",
     "posthtml-include": "^1.7.2",
     "sass": "^1.49.9"
   },
