@@ -345,7 +345,7 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url("/img/header-bg.jpg");
+  background-image: url("../img/header-bg.jpg");
   background-color: #666; }
 
 .header__top-block-container {
@@ -615,7 +615,7 @@ a {
       background-position: center;
       background-size: contain;
       background-repeat: no-repeat;
-      background-image: url("/img/icon-time.svg"); }
+      background-image: url("../img/icon-time.svg"); }
   .recipes__item-prop--bookmarks {
     position: relative;
     padding-left: 23px; }
@@ -630,7 +630,7 @@ a {
       background-position: center;
       background-size: contain;
       background-repeat: no-repeat;
-      background-image: url("/img/icon-bookmark.svg"); }
+      background-image: url("../img/icon-bookmark.svg"); }
 
 .footer {
   padding-top: 133px;
