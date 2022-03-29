@@ -1,0 +1,43 @@
+.footer-menu {
+  @include dflex(nowrap, column, flex-start, flex-start);
+  width: 287px;
+
+  &:not(:last-of-type) {
+    margin-right: 60px;
+  }
+}
+
+.footer-menu__heading {
+  @include reset;
+  margin-bottom: 44px;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 120%;
+  text-transform: uppercase;
+  letter-spacing: .03em;
+}
+
+.footer-menu__list {
+  @include list-reset;
+  @include dflex(nowrap, column, flex-start, flex-start);
+}
+
+.footer-menu__item {
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.footer-menu__link {
+  @include transition(color);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+  color: $alt-color;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    outline: none;
+  }
+}

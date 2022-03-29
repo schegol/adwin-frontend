@@ -1,0 +1,33 @@
+.image-menu {
+  @include list-reset;
+  @include dflex(wrap, row, flex-start, flex-start);
+  width: calc(100% + 21px);
+  margin-bottom: -21px;
+}
+
+.image-menu__item {
+  @include dflex(nowrap, column, flex-start, stretch);
+  flex-basis: calc(100% / 3 - 21px);
+  margin: 0 21px 21px 0;
+}
+
+.image-menu__img {
+  margin-bottom: 17px;
+  border-radius: $border-radius;
+  box-shadow: 0px 64px 44px -30px rgba(0, 0, 0, 0.65);
+}
+
+.image-menu__title {
+  @include reset;
+  @include transition(color);
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 120%;
+  color: $bg-color;
+}
+
+.image-menu__link:hover .image-menu__title,
+.image-menu__link:focus .image-menu__title {
+  color: $accent-color;
+  outline: none;
+}

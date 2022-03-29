@@ -2,7 +2,6 @@
 <html lang="ru" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.min.css">
     <title>food4u | Adwin Frontend</title>
@@ -12,19 +11,19 @@
       <div class="header__top-block">
         <div class="header__top-block-container">
           <a class="header__logo logo" href="#">
-            <img class="logo__img logo__img--header" src="/img/logo-header.svg" alt="Логотип сайта">
+            <img class="logo__img logo__img--header" src="/img/logo-header.svg" alt="Логотип сайта" width="256" height="67">
           </a>
           <div class="header__menu-block">
             <nav class="header__menu header-menu">
               <ul class="header-menu__list">
                 <li class="header-menu__item">
-                  <a href="#" class="header-menu__link">Каталог рецептов</a>
+                  <a class="header-menu__link" href="#">Каталог рецептов</a>
                 </li>
                 <li class="header-menu__item">
-                  <a href="#" class="header-menu__link">Спецпроекты</a>
+                  <a class="header-menu__link" href="#">Спецпроекты</a>
                 </li>
                 <li class="header-menu__item">
-                  <a href="#" class="header-menu__link">Шеф-повар</a>
+                  <a class="header-menu__link" href="#">Шеф-повар</a>
                 </li>
               </ul>
             </nav>
@@ -43,19 +42,19 @@
           <ul class="header__image-menu image-menu">
             <li class="image-menu__item">
               <a class="image-menu__link" href="#">
-                <img class="image-menu__img" src="/img/header-link-img-1.jpg" alt="Основные блюда - изображение">
+                <img class="image-menu__img" src="/img/header-link-img-1.jpg" alt="Основные блюда - изображение" width="446" height="233">
                 <h2 class="image-menu__title">Основные блюда</span>
               </a>
             </li>
             <li class="image-menu__item">
               <a class="image-menu__link" href="#">
-                <img class="image-menu__img" src="/img/header-link-img-2.jpg" alt="Десерты - изображение">
+                <img class="image-menu__img" src="/img/header-link-img-2.jpg" alt="Десерты - изображение" width="446" height="233">
                 <h2 class="image-menu__title">Десерты</span>
               </a>
             </li>
             <li class="image-menu__item">
               <a class="image-menu__link" href="#">
-                <img class="image-menu__img" src="/img/header-link-img-3.jpg" alt="Напитки - изображение">
+                <img class="image-menu__img" src="/img/header-link-img-3.jpg" alt="Напитки - изображение" width="446" height="233">
                 <h2 class="image-menu__title">Напитки</span>
               </a>
             </li>
@@ -73,7 +72,7 @@
           <div class="recipes__list">
             <div class="recipes__item">
               <a class="recipes__item-img-link" href="#">
-                <img class="recipes__item-img" src="/img/recipes-img-1.jpg" alt="Просто оливьешка как в детстве - изображение">
+                <img class="recipes__item-img" src="/img/recipes-img-1.jpg" alt="Просто оливьешка как в детстве - изображение" width="380" height="305">
               </a>
               <a class="recipes__item-title" href="#">Просто оливьешка как в детстве</a>
               <p class="recipes__item-props">
@@ -85,7 +84,7 @@
 
             <div class="recipes__item">
               <a class="recipes__item-img-link" href="#">
-                <img class="recipes__item-img" src="/img/recipes-img-2.jpg" alt="Кусок мяса прокопчённый в пылу дедлайна - изображение">
+                <img class="recipes__item-img" src="/img/recipes-img-2.jpg" alt="Кусок мяса прокопчённый в пылу дедлайна - изображение" width="380" height="305">
               </a>
               <a class="recipes__item-title" href="#">Кусок мяса прокопчённый в пылу дедлайна</a>
               <p class="recipes__item-props">
@@ -95,9 +94,10 @@
               </p>
             </div>
 
-            <div class="recipes__item">
+            <div class="recipes__item recipes__item--new">
+              <span class="recipes__new-tag">Новинка</span>
               <a class="recipes__item-img-link" href="#">
-                <img class="recipes__item-img" src="/img/recipes-img-3.jpg" alt="Сердечко дизайнера разбитое правками - изображение">
+                <img class="recipes__item-img" src="/img/recipes-img-3.jpg" alt="Сердечко дизайнера разбитое правками - изображение" width="380" height="305">
               </a>
               <a class="recipes__item-title" href="#">Сердечко дизайнера разбитое правками</a>
               <p class="recipes__item-props">
@@ -109,7 +109,7 @@
 
             <div class="recipes__item">
               <a class="recipes__item-img-link" href="#">
-                <img class="recipes__item-img" src="/img/recipes-img-4.jpg" alt="Макарошки в модном соусе по рецепту из Тик Тока - изображение">
+                <img class="recipes__item-img" src="/img/recipes-img-4.jpg" alt="Макарошки в модном соусе по рецепту из Тик Тока - изображение" width="380" height="305">
               </a>
               <a class="recipes__item-title" href="#">Макарошки в модном соусе по рецепту из Тик Тока</a>
               <p class="recipes__item-props">
@@ -127,7 +127,7 @@
       <div class="footer__top-block">
         <div class="footer__top-block-left">
           <a class="footer__logo logo" href="#">
-            <img class="logo__img logo__img--footer" src="/img/logo-header.svg" alt="Логотип сайта">
+            <img class="logo__img logo__img--footer" src="/img/logo-footer.svg" alt="Логотип сайта" width="256" height="67">
           </a>
           <div class="footer__site-desc">
             <p>
@@ -197,22 +197,22 @@
             <ul class="social__list">
               <li class="social__item">
                 <a class="social__link" href="https://instagram.com/" target="_blank">
-                  <img class="social__img" src="/img/icon-ig.svg" alt="Логотип Instagram">
+                  <img class="social__img" src="/img/icon-ig.svg" alt="Логотип Instagram" width="52" height="52">
                 </a>
               </li>
               <li class="social__item">
                 <a class="social__link" href="https://vk.com/" target="_blank">
-                  <img class="social__img" src="/img/icon-vk.svg" alt="Логотип VK">
+                  <img class="social__img" src="/img/icon-vk.svg" alt="Логотип VK" width="52" height="52">
                 </a>
               </li>
               <li class="social__item">
                 <a class="social__link" href="https://youtube.com/" target="_blank">
-                  <img class="social__img" src="/img/icon-yt.svg" alt="Логотип Youtube">
+                  <img class="social__img" src="/img/icon-yt.svg" alt="Логотип Youtube" width="52" height="52">
                 </a>
               </li>
               <li class="social__item">
                 <a class="social__link" href="https://pinterest.com/" target="_blank">
-                  <img class="social__img" src="/img/icon-pin.svg" alt="Логотип Pinterest">
+                  <img class="social__img" src="/img/icon-pin.svg" alt="Логотип Pinterest" width="52" height="52">
                 </a>
               </li>
             </ul>

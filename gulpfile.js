@@ -15,7 +15,12 @@ var del = require("del");
 
 gulp.task("css", function () {
   return gulp.src("src/sass/style.scss")
-    .pipe(plumber())
+    .pipe(plumber({
+      onError: function (err) {
+         console.log(err);
+         this.emit("end");
+     }}
+    ))
     .pipe(sourcemap.init())
     .pipe(sass())
     .pipe(postcss([

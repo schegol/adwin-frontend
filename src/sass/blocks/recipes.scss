@@ -1,0 +1,130 @@
+.recipes__heading {
+  @include reset;
+  margin-bottom: 43px;
+  color: $text-color;
+  font-weight: 800;
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 120%;
+}
+
+.recipes__list {
+  @include dflex(wrap, row, flex-start, flex-start);
+  width: calc(100% + 60px);
+  margin-bottom: -30px;
+}
+
+.recipes__item {
+  @include dflex(nowrap, column, flex-start, stretch);
+  flex-basis: calc(25% - 60px);
+  margin: 0 60px 30px 0;
+
+  &--new {
+    position: relative;
+  }
+}
+
+.recipes__new-tag {
+  @include dflex(nowrap, row, center, center);
+  position: absolute;
+  top: 19px;
+  right: 23px;
+  padding: 8px 30px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 120%;
+  color: $text-color;
+  text-align: center;
+  background-color: $accent-color;
+  border-radius: 20px;
+}
+
+.recipes__item-img-link {
+  display: block;
+  width: 100%;
+  height: 305px;
+  margin-bottom: 15px;
+  border-radius: $border-radius;
+  overflow: hidden;
+
+  &:hover,
+  &:focus {
+    outline: none;
+  }
+}
+
+.recipes__item-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.recipes__item-title {
+  @include transition(color);
+  display: inline-block;
+  margin-bottom: 15px;
+  padding-right: 20px;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 120%;
+  color: $text-color;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    outline: none;
+  }
+}
+
+.recipes__item-img-link:hover + .recipes__item-title,
+.recipes__item-img-link:focus + .recipes__item-title {
+  color: $accent-color;
+}
+
+.recipes__item-props {
+  @include reset;
+  @include dflex(wrap, row, flex-start, flex-start);
+}
+
+.recipes__item-prop {
+  display: inline-block;
+  color: $alt-color;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 120%;
+
+  &:not(:last-child) {
+    margin-right: 40px;
+  }
+
+  &--time {
+    position: relative;
+    padding-left: 31px;
+
+    &::before {
+      @include abs-center-y;
+      width: 20px;
+      height: 20px;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url("/img/icon-time.svg");
+    }
+  }
+
+  &--bookmarks {
+    position: relative;
+    padding-left: 23px;
+
+    &::before {
+      @include abs-center-y;
+      width: 14px;
+      height: 18px;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url("/img/icon-bookmark.svg");
+    }
+  }
+}

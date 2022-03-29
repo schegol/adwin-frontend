@@ -1,6 +1,83 @@
+.header {
+  padding-top: 25px;
+  padding-bottom: 95px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("/img/header-bg.jpg");
+}
+
 .header__top-block-container {
     @include dflex(nowrap, row, space-between, center);
-    width: 100%;
-    max-width: 1800px;
+    width: 1800px;
     margin: 0 auto;
+}
+
+.header__menu-block {
+  @include dflex(nowrap, row, space-between, center);
+  padding-right: 22px;
+}
+
+.header__btn {
+  @include dflex(nowrap, row, center, center);
+  @include transition(background-color);
+  min-width: 270px;
+  height: 76px;
+  color: $text-color;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 120%;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: $accent-color;
+  border-radius: 40px;
+  box-shadow: 0px 4px 14px rgba(0,0,0,.35);
+
+  &:hover,
+  &:focus {
+    background-color: lighten($accent-color, 10%);
+    outline: none;
+  }
+
+  &:active {
+    background-color: darken($accent-color, 10%);
+    outline: none;
+  }
+}
+
+.header__menu {
+  margin-right: 99px;
+}
+
+.header__bottom-block {
+  margin-top: 93px;
+}
+
+.header__bottom-block-container {
+  width: 1800px;
+  margin: 0 auto;
+  padding: 0 210px;
+}
+
+.header__page-heading {
+  @include reset;
+  display: inline-block;
+  max-width: 877px;
+  margin: 0 0 36px;
+  font-weight: 800;
+  font-size: 72px;
+  line-height: 120%;
+  color: $bg-color;
+}
+
+.header__page-description {
+  @include reset;
+  display: inline-block;
+  max-width: 758px;
+  margin: 0 0 119px;
+  font-family: "PT Serif", "Times New Roman", serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 170%;
+  color: $bg-color;
 }

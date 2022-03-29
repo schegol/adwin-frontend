@@ -1,0 +1,29 @@
+.social__heading {
+  @include reset;
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 120%;
+  letter-spacing: .03em;
+  text-transform: uppercase;
+  color: $text-color;
+}
+
+.social__list {
+  @include list-reset;
+  @include dflex(wrap, row, flex-start, flex-start);
+}
+
+.social__item {
+  &:not(:last-child) {
+    margin-right: 48px;
+  }
+}
+
+.social__link {
+  display: block;
+}
+
+.social__img {
+  display: block;
+}

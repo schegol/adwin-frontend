@@ -1,0 +1,23 @@
+.header-menu__list {
+  @include list-reset;
+  @include dflex(nowrap, row, flex-start, center);
+}
+
+.header-menu__item {
+  &:not(:last-child) {
+    margin-right: 66px;
+  }
+}
+
+.header-menu__link {
+  @include transition(color);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 120%;
+  color: $bg-color;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
