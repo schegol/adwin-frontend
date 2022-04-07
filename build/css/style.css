@@ -320,6 +320,7 @@ html, body {
   overflow-x: auto; }
 
 body {
+  min-width: 1920px;
   max-width: 100%;
   margin: 0;
   padding: 0;
